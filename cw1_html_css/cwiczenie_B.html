@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cwiczenie B</title>
+    <link rel="stylesheet" type="text/css" href="cwiczenie_B.css"/>
+</head>
+<body>
+<h1>Formularz </h1>
+
+<form action="mailto:slusarczyk.michal23@gmail.com?subject:temat_ankiety" method="POST" enctype="multipart/form-data">
+    <div class="input_areas">
+        <input class="input" name="pole" placeholder="wprowadz imie" type="text"/>
+        <input class="input" name="haslo" placeholder="wprowadz haslo" type="password">
+        <br>
+        <br>
+
+        <textarea name="dluzszy_tekst"
+                  rows="30"
+                  cols="40"
+                  placeholder="miejsce na dluzszy tekst"></textarea>
+    </div>
+    <br>
+
+
+    <div class="select_upload">
+        <label for="select">Wybierz opcje</label>
+        <select name="select_option" id="select">
+            <option selected="true" value="1">
+                Wariant 1
+            </option>
+            <option value="2">
+                Wariant 2
+            </option>
+            <option value="3">
+                Wariant 3
+            </option>
+        </select>
+
+        <p>Wybierz plik do wysłania: <input type="file"/></p>
+
+        <br><br>
+
+    </div>
+
+    <div class="radio">
+        <div>
+            <input type="radio" id="zgoda" name="drone" value="dewey">
+            <label for="zgoda">wyrazam zgode</label>
+        </div>
+
+        <div>
+            <input type="radio" id="nie_zgoda" name="drone" value="louie" checked>
+            <label for="nie_zgoda">nie wyrazam zgody</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="newsletter" name="zapisz do newslettera"/>
+            <label for="newsletter">zapisz do newslettera</label><br>
+        </div>
+        <div>
+            <input type="checkbox" id="kotnakt" name="kontakt"/>
+            <label for="newsletter">prosze o kontakt</label><br>
+        </div>
+
+        <br><br>
+
+    </div>
+
+
+    <div class="btns">
+        <input class="btn_submit" type="submit" value="Zatwierdź"/>
+        <input class="btn_submit btn_reset" type="reset" value="Wyczyść "/>
+    </div>
+
+
+</form>
+</body>
+</html>

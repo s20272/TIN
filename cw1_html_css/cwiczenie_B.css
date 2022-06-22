@@ -1,0 +1,72 @@
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.input {
+    display: inline-block;
+    border: 3px solid red;
+    height: 40px;
+    width: 49%;
+
+}
+
+textarea {
+    height: 180px;
+    width: 99.4%;
+}
+
+.input_areas {
+    margin-right: 15%;
+}
+
+.input_areas, .radio, .select_upload {
+    margin-left: 15%;
+}
+
+
+.btn_submit {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btn_submit:hover {
+    background-color: #a2f380;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btn_reset {
+    background-color: #f44336;
+}
+
+.btn_reset:hover {
+    background-color: #f17772;
+}
+
+.btns {
+    text-align: center;
+}
+
+.select_upload {
+    display: inline-block;
+}
+
+.radio label {
+    font-size: 18px;
+}
