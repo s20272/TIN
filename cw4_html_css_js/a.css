@@ -1,0 +1,104 @@
+body {
+    background-color: #9aeff1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header img {
+    margin: -10px;
+}
+
+#showCelsius, #showFaren {
+    display: none;
+    text-align: center;
+}
+
+
+#invalides, #invalides1 {
+    font-size: 20px;
+    color: red;
+}
+
+.input {
+    display: inline-block;
+    border: 3px solid #1d4343;
+    background-color: cadetblue;
+    color: white;
+    height: 40px;
+    font-size: 20px;
+    width: 49%;
+}
+
+.convert_result {
+    font-size: 25px;
+}
+
+
+.options {
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: cadetblue;
+    color: white;
+    height: 50px;
+}
+
+.options input, label {
+    margin-top: 18px;
+    font-size: 20px;
+}
+
+.lower_banner {
+    font-size: 20px;
+}
+
+.button {
+    background-color: cadetblue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #1d4343;
+}
+
+::placeholder {
+    color: #f9fcfc;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #f9fcfc;
+}
+
+::-ms-input-placeholder {
+    color: #f9fcfc;
+}
+
+#myTable {
+
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#myTable td, #myTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    background-color: #dddddd;
+}
+
+
+#myTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #1d4343;
+    color: white;
+}

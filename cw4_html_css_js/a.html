@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="a.css">
+    <script src="a.js"></script>
+</head>
+<body onload="show()">
+
+<header>
+    <img src="https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/weather/cloud/altocumulus.jpg"
+         alt="clouds_banner"
+         height="450px" width="110%">
+</header>
+
+
+<div class="options">
+    <input onclick="show()" type="radio" id="celsius" name="temp" checked>
+    <label for="celsius">convert from celsius to fatenheit</label>
+    <input onclick="show()" type="radio" id="farenheit" name="temp">
+    <label for="farenheit">convert from fatenheit to celsius</label><br>
+</div>
+<div id="showCelsius">
+    <p class="lower_banner">Convert from celsius to farenheit</p>
+
+    <input class="input" placeholder="Enter temperature in celsius degrees" id="c">
+    <input class="input" placeholder="Enter date ex. 12/12/2022" type="text" id="d">
+    <p id="f" style="display: none"></p>
+    <p class="convert_result"><a id="cel"></a><a id="far"></a></p>
+    <a id="invalides"></a>
+    <br>
+    <button class="button" type="button" onclick="convertFromCelsiusToFaren(); myFunction()">Convert</button>
+</div>
+<div id="showFaren">
+    <p class="lower_banner">Convert from farenheit to celsius</p>
+
+    <input class="input" placeholder="Enter temperature in ferenheit degrees" id="fa">
+    <input class="input" placeholder="Enter date ex. 12/12/2022" type="text" id="da">
+    <p id="ce" style="display: none"></p>
+    <p class="convert_result"><a id="far1"></a><a id="cel1"></a></p>
+    <a id="invalides1"></a>
+    <br>
+    <button class="button" type="button" onclick="convertFromFarenToCelsius() ; myFunction()">Convert</button>
+</div>
+
+
+<table id="myTable">
+    <tr>
+        <th>Celsius</th>
+        <th>Farenheit</th>
+        <th>Date</th>
+    </tr>
+
+</table>
+
+<br>
+
+</body>
+</html>
