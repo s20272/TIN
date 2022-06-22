@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    form(action='/formdata', method='GET')
+      p
+        | First name:
+        input(name='firstName', value='', type='text')
+        |          Last name :
+        input(name='lastName', value='', type='text')
+        |          Index:
+        input(name='index', value='', type='text')
+      input(value='Save', type='submit')
